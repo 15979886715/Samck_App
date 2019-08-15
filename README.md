@@ -4,11 +4,6 @@ Project Description
 * Function：Register account, login and exit system, get friends list, add and delete friends, send text messages, share location information (based on Baidu map SDK).
 * Support：If you have a problem or find an application error, you can submit a question here or contact me by mail. If you think this application is good, I hope you will give a "Star" to the project.
 
-Contact Information
--------
-* Author: 郭峰
-* Email: iamguofeng@163.com 
-* CSDN: http://blog.csdn.net/plain_maple
 
 Application Screenshot
 -------
