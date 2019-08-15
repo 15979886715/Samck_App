@@ -1,0 +1,24 @@
+buildscript {
+    repositories {
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.google.gms:google-services:4.2.0'
+    }
+}
+
+allprojects {
+    repositories {
+        mavenLocal()
+        jcenter()
+        //加入jitpack仓库
+        maven { url "https://jitpack.io" }
+        google()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "ldu.guofeng.imdemo"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+configurations {
+    //xpp3消除警告
+    all*.exclude group: 'xpp3', module: 'xpp3'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:27.0.1'
+    implementation 'com.android.support:design:27.1.0'
+
+    //字母索引列表
+    implementation project(':indexlib')
+    //左滑删除：根build.gradle需要引入maven { url "https://jitpack.io" }
+    implementation 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.2.2'
+    //图片加载框架
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    //事件发布/订阅框架
+    //通过少量实现多个模块之间通信，降低因多重回调导致的模块间强耦合，提高性能。
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    //smack
+//    implementation 'org.igniterealtime.smack:smack-android-extensions:4.1.9'
+//    implementation 'org.igniterealtime.smack:smack-tcp:4.1.9'
+    implementation 'org.igniterealtime.smack:smack-android-extensions:4.3.1'
+    implementation 'org.igniterealtime.smack:smack-tcp:4.3.1'
+    implementation 'de.measite.minidns:minidns:0.1.7'
+    //百度地图
+    implementation files('libs/BaiduLBS_Android.jar')
+
+
+    // Testing dependencies
+//    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test:rules:1.0.2'
+    androidTestImplementation 'com.android.support:support-annotations:28.0.0'
+
+    //FCM
+    implementation 'com.google.firebase:firebase-core:16.0.6'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'com.google.firebase:firebase-iid:17.0.4'
+    implementation 'com.firebase:firebase-jobdispatcher:0.8.5'
+
+
+}
+
+apply plugin: 'com.google.gms.google-services'

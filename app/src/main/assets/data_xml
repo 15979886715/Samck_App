@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<iq type="set" from="daiyunlong0426@192.168.133.151/Spark" id="25443550-3A2F-4674-8987-6DEC591D3C18">
+   <query  xmlns="urn:xmpp:apns">
+         <token>088d158f7c741bdbb9d3fc203f477249da03187ec16bd7c4a6b3d0a0e9bb9ab5</token>
+         <tokenTpye>IOS</tokenTpye>
+    </query>
+</iq>

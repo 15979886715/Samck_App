@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "69428393707",
+    "firebase_url": "https://apns-54d88.firebaseio.com",
+    "project_id": "apns-54d88",
+    "storage_bucket": "apns-54d88.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69428393707:android:c92cd9bedc18c2cd",
+        "android_client_info": {
+          "package_name": "ldu.guofeng.imdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "69428393707-sq8mufj3ndugtnm4elds65n3qh31kv49.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA89z0lNy7GGfsSdfcB9qI1SSRmfviyXFo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
