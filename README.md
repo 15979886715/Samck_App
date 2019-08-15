@@ -28,4 +28,4 @@ Application Screenshot
 
 
 
-# Samcker-App
+# Samck-App
